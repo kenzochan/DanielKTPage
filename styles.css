@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1e1e2f;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #f39c12;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    font-size: 2em;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    font-size: 0.75em;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    margin-top: 0px;
+    color: #b6b6b6;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container a {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #f39c12;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+.button-container a:hover {
+    background-color: #e67e22;
+}
+
+.button-container a i {
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+/* Estilo do botão de "About me" */
+.help-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #787878;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.help-button:hover {
+    background-color: #e67e22;
+}
+
+/* Estilo da caixa de texto (inicialmente oculta) */
+.help-box {
+    position: absolute; /* Fixa a posição da caixa */
+    display: none;
+    margin-top: 10px;
+    background-color: #ffffffe2;
+    color: #333;
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 300px;
+    text-align: left;   
+    font-size: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    top: 300px;
+    right: 575px;       
+}
+
+/* Exibe a caixa de texto ao passar o mouse sobre o botão */
+.help-button:hover + .help-box {
+    display: block;
+}

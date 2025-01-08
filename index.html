@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Kenzo Takagi Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="intro-text">I'm Daniel Kenzo Takagi, a developer, hire me!</div>
+    <img src="https://i.imgur.com/Na22KkA.jpeg" alt="Profile Picture" class="profile-image">
+    <div class="button-container">
+        <!-- CV Button -->
+        <a href="https://docs.google.com/document/d/13uv9E-owUgtN-IAFvNvmi92l_DSMSHfiBrMDWS4FK8g/edit?tab=t.0" target="_blank">
+            <i class="fab fa-google-drive"></i> CV
+        </a><br>
+        <!-- LinkedIn Button -->
+        <a href="https://www.linkedin.com/in/daniel-kenzo-takagi-634090149/" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a><br>
+        <!-- GitHub Button -->
+        <a href="https://github.com/kenzochan" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+        </a><br>
+        <!-- Itch.io Button -->
+        <a href="https://kkkkenzo.itch.io/" target="_blank">
+            <i class="fab fa-itch-io"></i> Itch.io
+        </a>       
+        <!-- Help Button (About me Button) -->
+        <br><br><br><br><br><br>
+        <button class="help-button" onmouseover="showHelpBox()" onmouseout="hideHelpBox()">About me</button>
+        <!-- Help Box (Texto) -->
+        <div class="help-box" id="helpBox">
+            Brazilian, living in Brazil. Has complete Bacharelor degree in Computer Science. Fluent communication in Portuguese, advanced in English, and begginer level in Spanish and Japanese. 
+        </div>
+    </div>
+
+    <script>
+        // Função para mostrar a caixa de ajuda
+        function showHelpBox() {
+            document.getElementById('helpBox').style.display = 'block';
+        }
+
+        // Função para esconder a caixa de ajuda
+        function hideHelpBox() {
+            document.getElementById('helpBox').style.display = 'none';
+        }
+    </script>
+    <div class="footer-text">        
+        <footer> <p>Página desenvolvida por Daniel Kenzo Takagi</p></footer>
+    </div>
+    
+</body>
+</html>
